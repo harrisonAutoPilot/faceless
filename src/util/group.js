@@ -81,12 +81,13 @@ export const group = [
       video:vd2
     }, 
     {
-      id: '5',
-      type:"img",
-      image_url:koi,
+        id: '5',
+        organization:'sobrity',
+        title:'I drank a little too much',
+        users:68,
       iconName: 'location-pin',
       poster_img:kid,
-      poster:'FaithIt',
+      host:'Mike & Her',
       post_title:'All blessing is from God',
       post_desc:'Your never giving up altitude will, make your enemies give up on you. A story was once told about a your man from Ogwashi-uku village is Delta state',
       post_date:'4 days ago',
@@ -95,11 +96,14 @@ export const group = [
    
     },
     {
-      id: '6',
-      type:"video",
-      // image_url:koi,
+        id: '6',
+        organization:'Soft truth',
+        title:'How to deal with smoking in the 21st century',
+        users:112,
+      iconName: 'location-pin',
+      poster_img:kid,
       poster_img:abraham,
-      poster:'Gnexdor',
+      host:'BlueDream',
       post_title:'All blessing comes from God, through men',
       post_desc:'this is where we all have to agree that...',
       post_date:'2 weeks ago',
@@ -107,17 +111,6 @@ export const group = [
       post_relate:'8',
       video:vd3
     }, 
-    {
-      id: '7',
-      type:"img",
-      image_url:rela,
-      poster_img:wounded,
-      poster:'Wounded_Healer',
-      post_title:'One right person is enough',
-      post_desc:'the a world where everybody is living a fast life. selfishness and self-centeredness is the order of the day. it sad but its important we know the bitter truth or the reality of our time.',
-      post_date:'3 weeks ago',
-      post_like:'2.3',
-      post_relate:'3.4',
-    }, 
+   
   ];
   

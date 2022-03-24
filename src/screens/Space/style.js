@@ -360,7 +360,7 @@ labelText:{
     fontWeight:'300', 
 },
 passwordCover:{
-    marginTop:190,
+     marginTop:10,
     width:wp('100%'),
     alignItems:'center'
 },
@@ -379,6 +379,13 @@ happenCover:{
     paddingTop:15,
     paddingBottom:15,
     marginTop:180,
+},
+happenCover1:{
+    width:wp('100%'),
+    paddingLeft:30,
+    paddingTop:15,
+    paddingBottom:15,
+    // marginTop:180,
 },
 happenText:{
     color: "#424242",
