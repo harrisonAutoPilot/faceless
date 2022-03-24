@@ -23,7 +23,7 @@ export default styles = StyleSheet.create({
     },
     tabLableTop:{
         position: "absolute",
-        top: Platform.OS === "android" ? -10 : -4,
+        top: Platform.OS === "android" ? -5 : -4,
         borderTopColor: "violet",
         borderTopWidth: 2,
         width: 60,

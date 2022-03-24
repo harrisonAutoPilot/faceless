@@ -4,7 +4,7 @@ import { Image, View} from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import styles from "./style";
 
-import { HomeStackNavigator, ContactStackNavigator, AboutStackNavigator, BrowseStackNavigator,ProfileStackNavigator} from "./StackNavigator";
+import { HomeStackNavigator, ContactStackNavigator, SpaceStackNavigator, BrowseStackNavigator,ProfileStackNavigator} from "./StackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -106,9 +106,9 @@ const BottomTabNavigator = () => {
                 
             />
              <Tab.Screen 
-                name="About" 
+                name="Space" 
                 showLabel="false"
-                component={AboutStackNavigator}
+                component={SpaceStackNavigator}
                 options={{
                   
                     tabBarStyle: { position: 'absolute', borderWidth: 1, borderStyle:'solid'},

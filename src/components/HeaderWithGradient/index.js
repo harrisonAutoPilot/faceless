@@ -14,9 +14,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const HeaderWithGradient = (props) => {
   return (
     <View >
-     <StatusBar barStyle="light-content" backgroundColor='#ca1ccb' hidden={true} />
+     <StatusBar barStyle="light-content" backgroundColor='transparent' hidden={true} />
         <LinearGradient
-            colors={['#f9d2f9', '#ca1cca']}
+            // colors={['#f9d2f9', '#ca1cca']}
+            colors={['#fff', '#f5f5f5']}
             // style={styles.container}
             start={{ x: 1, y: 1.2}}
             end={{ x: 0.2, y: 0.2}}
@@ -26,7 +27,7 @@ const HeaderWithGradient = (props) => {
                   <View style={styles.profileCover}>
                     <Image source={require("../../assets/baba.jpeg")} style={styles.profileImg} />
                   </View>
-                <Text style={styles.profileName}>{props.username}</Text>
+                <Text style={styles.profileName}>{props.title}</Text>
               </View>
               <View style={styles.searchCover}>
             <TouchableOpacity>
@@ -53,14 +54,14 @@ const styles = StyleSheet.create({
   },
   topCover:{
     width:wp('100%'),
-    height:80,
+    height:65,
   //   backgroundColor:'#fff',
     flexDirection:'row',
     justifyContent:'space-between'
   },
   topInner:{
     flexDirection:'row',
-    marginTop:5,
+     marginTop:-5,
     // justifyContent:'space-around',
 
   },
@@ -71,14 +72,16 @@ const styles = StyleSheet.create({
     borderRadius:100,
     width:50,
     height:50,
-    marginTop:20,
+    marginTop:15,
     marginLeft:20,
     marginRight:10,
 
   },
   profileName:{
-    marginTop:45,
-    color:'#fff'
+    marginTop:30,
+    color:'violet',
+    fontSize:18,
+    fontWeight:"600"
   },
   profileImg:{
     width:48,
@@ -92,7 +95,7 @@ const styles = StyleSheet.create({
     // borderRadius:100,
   },
   searchCover:{
-    marginTop:40,
+    marginTop:20,
     marginRight:40,
     flexDirection:'row',
   },

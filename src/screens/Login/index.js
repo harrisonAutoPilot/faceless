@@ -7,7 +7,7 @@ import {useForm, Controller} from 'react-hook-form'
 
 const Login = ({ props, navigation }) => {
   const {
-    control, 
+  control, 
     handleSubmit,
     formState: {errors, isValid,}
   } = useForm({mode: 'onBlur'})

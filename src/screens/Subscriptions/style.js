@@ -16,9 +16,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     headerText:{
-      marginTop:47,
-      color:'#fff',
-      fontWeight:'600'
+      marginTop:30,
+      color:'violet',
+      fontWeight:'600',
+      fontSize:18,
      
     },
     subHeading: {
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
         borderColor:'#f3f4f5',
         borderStyle:'solid',
         borderRadius:20,
-        elevation:5,
+        elevation:1,
         backgroundColor:'#f5f5f5',
      },
      sortCoverSelected:{
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
         borderColor:'#f3f4f5',
         borderStyle:'solid',
         borderRadius:20,
-        elevation:5,
+        elevation:1,
         backgroundColor:'violet',
      },
 sortName:{
@@ -278,7 +279,7 @@ marginTop:15,
     position: 'absolute',
     borderRadius: 3,
     margin: 10,
-    top:265,
+    top: Platform.OS === 'ios' ? 265 : 240,
     right: 5,
     flexDirection: 'row',
     justifyContent:'space-around',
@@ -290,7 +291,7 @@ marginTop:15,
     position: 'absolute',
     borderRadius: 3,
     margin: 10,
-    top:265,
+    top: Platform.OS === 'ios' ? 265 : 240,
     right: 5,
     flexDirection: 'row',
     justifyContent:'space-around',
@@ -302,7 +303,7 @@ marginTop:15,
     position: 'absolute',
     borderRadius: 3,
     margin: 10,
-    top:265,
+    top: Platform.OS === 'ios' ? 265 : 240,
     right: 5,
     flexDirection: 'row',
     justifyContent:'space-around',
@@ -422,7 +423,8 @@ marginTop:15,
       height:50,
       borderRadius:100,
       marginTop:15,
-  }
+  },
+
 });
 
 export default styles;

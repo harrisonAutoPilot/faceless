@@ -13,19 +13,19 @@ import {
 const HeaderWithGradient = (props) => {
   return (
     <View >
-       <StatusBar barStyle="light-content" backgroundColor='#00319D' hidden={false} />
+       <StatusBar barStyle="light-content" backgroundColor='#fff' hidden={true} />
         <LinearGradient
         
             // colors={['#f9d2f9', '#ca1cca']}
             // style={styles.container} colors={['#f9d2f9', '#ca1cca']}
-            colors={['#f9d2f9', '#ca1cca']}
+            colors={['#fff', '#f5f5f5']}
             start={{ x: 1, y: 1.2}}
             end={{ x: 0.2, y: 0.2}}
             >
            <View style={styles.topCover}>
               <View style={styles.topInner}>
                   <View style={styles.profileCover}>
-                    <Image source={require("../../assets/mee.jpg")} style={styles.profileImg} />
+                    <Image source={require("../../assets/baba.jpeg")} style={styles.profileImg} />
                   </View>
                 <Text style={props.styles}>{props.username}</Text>
               </View>
@@ -57,14 +57,14 @@ const styles = StyleSheet.create({
   },
   topCover:{
     width:wp('100%'),
-    height:80,
+    height:65,
   //   backgroundColor:'#fff',
     flexDirection:'row',
     justifyContent:'space-between'
   },
   topInner:{
     flexDirection:'row',
-    marginTop:5,
+    marginTop:-5,
     // justifyContent:'space-around',
 
   },
@@ -75,13 +75,13 @@ const styles = StyleSheet.create({
     borderRadius:100,
     width:50,
     height:50,
-    marginTop:20,
+    marginTop:15,
     marginLeft:20,
     marginRight:10,
 
   },
   profileName:{
-    marginTop:35,
+    marginTop:15,
     color:'#fff'
   },
   profileImg:{
@@ -92,13 +92,13 @@ const styles = StyleSheet.create({
   searchImg:{
     width:24,
     height:24,
-    marginTop:40,
+    marginTop:20,
     // borderRadius:100,
   },
   liveImg:{
     width:38,
     height:38,
-    marginTop:30,
+    marginTop:10,
     marginRight:20,
     // borderRadius:100,
   },
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     height:20,
     marginleft:10,
     marginLeft:20,
-    marginTop:40,
+    marginTop:20,
   },
 });
 

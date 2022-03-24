@@ -13,6 +13,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const { width } = Dimensions.get('screen');
 import styles from './style'
 import Video from "react-native-video";
+
 import HeaderWithGradient from '../../components/HeaderWithGradient';
 
 import Button from '../../components/Btn'
@@ -94,7 +95,7 @@ const Home = ({ navigation }) => {
 
     <View style={styles.container}>
       <HeaderWithGradient
-      username="@Odimnobi"
+      title="FIELDS"
        />
 
 

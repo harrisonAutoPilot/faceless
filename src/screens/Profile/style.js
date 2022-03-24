@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   camCover: {
-    marginTop: 90,
+    marginTop: Platform.OS === 'ios' ? 90 : 105,
     marginRight: 150,
     padding: 5,
     backgroundColor: '#fff',
@@ -146,8 +146,8 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   iconImg: {
-    width: 22,
-    height: 22,
+    width: 20,
+    height: 20,
     resizeMode: 'contain'
   },
   titleCover: {
@@ -239,9 +239,9 @@ const styles = StyleSheet.create({
     flexWrap: "wrap"
   },
   card: {
-    width: 120,
+    width: 110,
     height: 190,
-    padding: 10,
+    padding: 20,
     // shadowColor: '#000',
     // shadowOffset: { width: 0, height: 2 },
     // shadowOpacity: 0.5,
@@ -261,11 +261,11 @@ const styles = StyleSheet.create({
     height: 12,
     marginTop: 2,
     position: 'absolute',
-    left: 40,
+    left: 35,
   },
   smPostImg: {
-    width: 90,
-    height: 90,
+    width: 80,
+    height: 80,
     borderRadius: 100,
 
   },
@@ -306,7 +306,7 @@ const styles = StyleSheet.create({
   },
   statContainer:{
     flexDirection:'row',
-    width:100,
+    width:95,
     justifyContent:'space-between',
     padding:5,
     backgroundColor:'#f5f5f5',

@@ -39,7 +39,7 @@ const ITEM_HEIGHT = ITEM_WIDTH * 2.2;
 
   return (
     <View style={styles.vontainer}>
-      <SubHeader username="@Odimnobi"  styles={styles.headerText}/>
+      <SubHeader username="SUBSCRIBTION"  styles={styles.headerText}/>
      
       {/* This is where the layerone starts */}
       <View style={styles.layerOne}>

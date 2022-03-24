@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     },
     btnCover:{
-        top:hp('73.5%'),
+        top:Platform.OS === 'ios' ? hp('75.5%'): hp('83.5%'),
     position:'absolute',
     
        

@@ -4,7 +4,7 @@ import { Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "../screens/Home";
-import About from "../screens/About";
+import Space from "../screens/Space";
 import Subscriptions from "../screens/Subscriptions";
 import Browse from "../screens/Browse";
 import Splash from "../screens/Splash";
@@ -36,7 +36,7 @@ const HomeStackNavigator = () => {
     }} 
     >
       <Stack.Screen name="Homee"   activetintcolor="red"  component={Home} initialRouteName='Settings' independent={true} options={{headerLeft: (props) => null }}  />
-      <Stack.Screen name="About" component={About} />
+      <Stack.Screen name="Space" component={Space} />
     </Stack.Navigator>
   );
 }
@@ -55,10 +55,10 @@ const BrowseStackNavigator = () => {
     </Stack.Navigator>
   );
 }
-const AboutStackNavigator = () => {
+const SpaceStackNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={screenOptionStyle}>
-      <Stack.Screen name="Aboutt" component={About} options={{ headerLeft: (props) => null }} />
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Spacet" component={Space} options={{ headerLeft: (props) => null }} />
     </Stack.Navigator>
   );
 }
@@ -83,4 +83,4 @@ export default MainStackNavigator = () => {
 }
 
 
-export { HomeStackNavigator,BrowseStackNavigator, AboutStackNavigator , ContactStackNavigator,ProfileStackNavigator };
+export { HomeStackNavigator,BrowseStackNavigator, SpaceStackNavigator , ContactStackNavigator,ProfileStackNavigator };

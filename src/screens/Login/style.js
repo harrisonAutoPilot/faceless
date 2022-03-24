@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     btnCover: {
-        top: Platform.OS === 'ios' ? hp('56.5%'): hp('60.5%'),
+        top: Platform.OS === 'ios' ? hp('56.5%'): hp('70.5%'),
         position: 'absolute',
         left:wp('9%'),
         zIndex:20,
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         fontWeight: '200',
     },
     inputCover:{
-        marginTop:50,
+        marginTop:Platform.OS === 'ios' ? 50 : 30,
     },
 textField:{
     borderWidth:1,
@@ -124,8 +124,8 @@ passwordCover:{
 },
 absImg:{
     zIndex:0,
-    width:250,
-    height:350,
+    width:240,
+    height:330,
     position:'absolute',
     marginTop:50,
     left:wp('3%')

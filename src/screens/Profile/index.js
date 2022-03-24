@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useState, useEffect, useRef}from 'react';
 import {
   SafeAreaView,
   Image,
@@ -14,10 +14,11 @@ import {
 } from 'react-native-responsive-screen';
 import styles from './style';
 import { data } from './data';
-
+// import RNPopoverMenu from 'react-native-popover-menu';
 const HEADER_MAX_HEIGHT = 240;
 const HEADER_MIN_HEIGHT = 84;
 const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
+
 
 // const DATA = Array(10)
 //   .fill(null)
@@ -56,9 +57,9 @@ const RenderListItem = ({ item, index }) => {
 };
 
 // const Profile = ({ props, navigation }) => {
-  function Profile() {
+  const Profile = ({ props, navigation }) => {
   const scrollY = useRef(new Animated.Value(0)).current;
-
+  const [visible, setVisible] = useState(false);
   const headerTranslateY = scrollY.interpolate({
     inputRange: [0, HEADER_SCROLL_DISTANCE],
     outputRange: [0, -HEADER_SCROLL_DISTANCE],
@@ -88,6 +89,9 @@ const RenderListItem = ({ item, index }) => {
   
   });
 
+  const goBack = () => {
+    navigation.navigate('HomeStat')
+ }
   // const RenderListItem = (item) => (
   //   <View key={item.id} style={styles.card}>
   //     <Image style={styles.avatar} source={{uri: item.avatar}} />
@@ -157,7 +161,7 @@ const RenderListItem = ({ item, index }) => {
           source={require('../../assets/kid.jpeg')} 
         />
        <View style={styles.navCover}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={goBack}>
           <Image source={require("../../assets/left-arrow.png")} style={styles.iconImg} />
           </TouchableOpacity>
 
@@ -197,15 +201,23 @@ const RenderListItem = ({ item, index }) => {
         <TouchableOpacity>
           <Image source={require("../../assets/quill-pen.png")} style={styles.penImg} />
           </TouchableOpacity>
+
+{/* 
+          <RNPopover visible={visible} reference={ref}>
+              <RNPopover.Menu label={"Editing"}>
+                <RNPopover.Menu label={"Copy"} icon={copy} />
+                <RNPopover.Menu label={"Paste"} icon={paste} />
+              </RNPopover.Menu>
+              <RNPopover.Menu >
+                <RNPopover.Menu label={"Share"} icon={share} />
+              </RNPopover.Menu>
+          </RNPopover>; */}
         </View>
       
     </SafeAreaView>
   );
 }
 
-// const styles = StyleSheet.create({
- 
-// });
 
 
 export default Profile;

@@ -226,7 +226,6 @@ const styles = StyleSheet.create({
     noteImg:{
       width:20,
       height:20,
-      marginleft:10,
       marginLeft:20,
       marginTop:5,
     },

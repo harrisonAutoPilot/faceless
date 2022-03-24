@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   
     topCover:{
       width:wp('100%'),
-      height:80,
+      height:60,
     //   backgroundColor:'#fff',
       flexDirection:'row',
       justifyContent:'space-between'
@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
     noteImg:{
       width:20,
       height:20,
-      marginleft:10,
       marginLeft:20,
       marginTop:5,
     },
